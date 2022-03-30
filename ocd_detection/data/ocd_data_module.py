@@ -12,7 +12,7 @@ BATCH_SIZE = 32
 NUM_WORKERS = os.cpu_count()
 
 class OCDDataModule(pl.LightningDataModule):
-    def __init__(self, args: argparse.Namespace = None, data_dir='./covid19data'):
+    def __init__(self, args: argparse.Namespace = None, data_dir='./dataset'):
         super().__init__()
         self.args = vars(args) if args is not None else {}
         self.batch_size = self.args.get("batch_size", BATCH_SIZE)
