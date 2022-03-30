@@ -1,0 +1,15 @@
+#Data
+covid19data/test
+covid19data/train
+covid19data/valid
+dataset/train
+dataset/valid
+
+#Logs
+training/logs
+
+#Editors
+.vscode
+
+#Python
+__pyache__
